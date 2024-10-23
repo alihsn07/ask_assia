@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Be My Boyfriend</title>
+    <title>Ask Assia</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>CAN I BE YOUR BOYFRIEND ASSIA?</h1>
         <div class="buttons">
-            <button id="yesBtn" class="btn yes">Yes</button>
-            <button id="noBtn" class="btn no">No</button>
+            <button id="yes-btn">Yes</button>
+            <button id="no-btn">No</button>
         </div>
-        <div id="message" class="message"></div>
-        <div id="video" class="video-container">
-            <iframe id="loveVideo" width="560" height="315" 
-            src="https://www.youtube.com/embed/7fTHD07Q9Pw?autoplay=1" 
-            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
+    </div>
+    
+    <div id="confetti-container" class="hidden">
+        <h2>YUPYYYY, I LOVE YOU ASSIA</h2>
+        <!-- تشغيل الفيديو تلقائياً -->
+        <video id="happy-video" autoplay muted>
+            <source src="https://youtube.com/shorts/7fTHD07Q9Pw?si=GNd4MotCDKnpiXt0" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
 
     <script src="script.js"></script>
